@@ -1,3 +1,4 @@
+Options -Indexes
 RewriteEngine on
 RewriteRule ^([a-zA-Z]+)$ mediatekdocuments.php?table=$1
 RewriteRule ^([a-zA-Z]+)/({.*})$ mediatekdocuments.php?table=$1&champs=$2
