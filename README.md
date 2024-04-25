@@ -2,7 +2,7 @@
 <B>Attention, si vous utilisez une version de PHP >= à 8.1, alors, dans le fichier mediatekdocuments.php, vous devez remplacer tous les "FILTER_SANITIZE_STRING" par "FILTER_SANITIZE_FULL_SPECIAL_CHARS".</B>
 
 Cette API est utilisée par l'application MediatekDocuments écrite en C# et récupérable dans le dépôt suivant :<br>
-https://github.com/CNED-SLAM/MediaTekDocuments<br>
+https://github.com/marcbernad/MediaTekDocuments<br>
 Le readme présente l'application et aussi le rôle de l'API.
 ## Présentation
 Cette API, écrite en PHP, permet d'exécuter des requêtes SQL sur la BDD Mediatek86 créée avec le SGBDR MySQL.<br>
@@ -15,6 +15,8 @@ Cette API contient les fichiers suivants :<br>
 - Controle.php : suivant les demandes, appelle les méthodes concernées dans la classe AccesBDD puis retourne le résultat au format json.<br>
 - AccesBDD.php : construit les requêtes SQL avec les collections de paramètres, demande à la classe ConnexionPDO de les exécuter et retourne le résultat.<br>
 - ConnexionPDO.php : se connecte à la BDD, construit les requêtes en intégrant les paramètres, les exécute et retourne le résultat.
+## Documentation technique
+Pour accéder à la documentation technique de l'API, télécharger le dossier rest_mediatekdocuments_doc puis ouvrir le fichier index.html dedans.
 ## Installation de l'API en local
 Pour tester l'application MediatekDocuments en local, il faut aussi installer l'API. Voici le mode opératoire :<br>
 - Installer les outils nécessaires (WampServer ou équivalent, Netbeans ou équivalent, Postman pour les tests).<br>
